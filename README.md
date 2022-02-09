@@ -9,7 +9,7 @@ Targeted Scanner Framework
   * Sensitive Data Exposure
   
   Current Development:
-  •	Create directory for results
+  * Create directory for results
   * Results file name will include date of scan
   * Total URL scanner (* for future metrics)
   * Security Header scanner will retrieve and listed misconfigured header
