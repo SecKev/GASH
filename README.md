@@ -30,10 +30,10 @@ REQUIREMENTS:
 * Installation of newest stable Python 3 version<br>
      https://www.python.org/downloads/windows/
 
-REQUIRED PYTHON LIBRARIES: 
-* Requests
-* BeautifulSoup4
-
 Use the following command to install Libraries: 
 * python -m pip <Library name><br>
      |-> For example: python -m pip requests
+  
+REQUIRED PYTHON LIBRARIES: 
+* Requests
+* BeautifulSoup4
