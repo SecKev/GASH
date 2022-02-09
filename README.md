@@ -27,7 +27,8 @@ Targeted Scanner Framework
   * Exposed Secrets
  
 REQUIREMENTS: 
-* Installation of newest stable Python 3 version 
+* Installation of newest stable Python 3 version<br>
+     https://www.python.org/downloads/windows/
 
 REQUIRED PYTHON LIBRARIES: 
 * Requests
