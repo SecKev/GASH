@@ -26,4 +26,13 @@ Targeted Scanner Framework
   * Services Detector
   * Exposed Secrets
  
+REQUIREMENTS: 
+•	Installation of newest stable Python 3 version 
 
+Following Pyhton Libraries:
+•	Requests
+•	BeautifulSoup4
+
+Use the following command to install Libraries: 
+•	python -m pip <Library name>
+o	For example: python -m pip requests
