@@ -35,8 +35,8 @@ REQUIREMENTS:
      https://www.python.org/downloads/windows/
 
 Use the following command to install Libraries: 
-* python -m pip install {library name} <br>
-        |-> For example: python -m pip install requests
+* python -m pip install { library name } <br>
+    *-> For example: python -m pip install requests
   
 REQUIRED PYTHON LIBRARIES: 
 * Requests
