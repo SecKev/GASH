@@ -34,5 +34,5 @@ REQUIRED PYTHON LIBRARIES:
 * BeautifulSoup4
 
 Use the following command to install Libraries: 
-* python -m pip <Library name>
+* python -m pip <Library name><br>
      |-> For example: python -m pip requests
