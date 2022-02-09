@@ -3,7 +3,8 @@ GEP Application Security Header Automation Tool
 
 Targeted Scanner Framework
 
-  <u>Current Production:</u>
+  Current Production:
+  -------------------
   * Security Header Findings
   * Basic mis-configuration
   * Sensitive Data Exposure
