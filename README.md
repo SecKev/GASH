@@ -27,12 +27,12 @@ Targeted Scanner Framework
   * Exposed Secrets
  
 REQUIREMENTS: 
-•	Installation of newest stable Python 3 version 
+* Installation of newest stable Python 3 version 
 
-Following Pyhton Libraries:
-•	Requests
-•	BeautifulSoup4
+REQUIRED PYTHON LIBRARIES: 
+* Requests
+* BeautifulSoup4
 
 Use the following command to install Libraries: 
-•	python -m pip <Library name>
-o	For example: python -m pip requests
+* python -m pip <Library name>
+     |-> For example: python -m pip requests
