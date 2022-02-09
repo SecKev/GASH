@@ -4,12 +4,15 @@ GEP Application Security Header Automation Tool
 Targeted Scanner Framework
 
   Current Production:
-  -------------------
   * Security Header Findings
   * Basic mis-configuration
   * Sensitive Data Exposure
   
   Current Development:
+  •	Create directory for results
+  * Results file name will include date of scan
+  * Total URL scanner (* for future metrics)
+  * Security Header scanner will retrieve and listed misconfigured header
   * Web Crawler [general, focused, deep-dive]
   * Directory Search
   
