@@ -85,7 +85,7 @@ for line in lines:
 
         for s in sFields:
             if s not in checkFields:
-                print("[-] Server Header NOT FOUND: " + s)
+                print("[-] Server Header NOT FOUND: ")
             else:
                 print("[-] Server Header FOUND:" + s)
 
