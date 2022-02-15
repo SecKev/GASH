@@ -24,7 +24,7 @@ resp = req.get(tURL)
 #Function for authentication
 #def authIO():
 #    payload ={
-#        'username': 'bofa.admin.gep.com',
+#        'username': '--',
 #        'pass': '--'
 #        }
 #
