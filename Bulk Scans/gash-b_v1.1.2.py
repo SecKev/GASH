@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 
 #################################################################
-# Create: 9/29/21
-# Purpose: Scan for Javascript vulnerabilities
 #
-# Functions:
-#  1. Crawl website
-#  2. Search for Form, Messages, and Comments section of website
-#  3. Test for XSS, xxe, CORS, CLI, RFI
-#   * find all the input filed: search, comment box, username / password field
-#   * contact forms, message forms, ALL FORM and INPUT field.
-#   * Web crawler: general, focused, deep
+# Create: 9/29/21
+# Purpose: Scan all security headers
+#           Identify misconfigured or missing headers
+#
 ##################################################################
 
 import requests as req
@@ -59,6 +54,7 @@ for line in lines:
         sFields = ['Server']
         
         checkFields = dict(hInfo)
+        mCount = 0
         for x in mFields:
             if x in checkFields:
                 print("[+] Mandatory Security FOUND: " + x)
@@ -66,6 +62,7 @@ for line in lines:
             else:
                 print("[-] Mandatory Security NOT FOUND: " + x)
                 f.write('[-] Mandatory Security NOT FOUND: ' + x +'\n')
+                mCount += 1
 
         for y in oFields:
             if y in checkFields:
@@ -74,20 +71,22 @@ for line in lines:
             else:
                 print("[-] Options Security NOT FOUND: " + y)
                 f.write('[-] Mandatory Security NOT FOUND: ' + y + '\n')
-
+        hstsCount = 0
         for z in config:
             if z not in checkFields:
                 print('[-] Misconfiguration of HSTS')
                 f.write('[-] Misconfiguration of HSTS \n' )
+                hstsCount += 1
             else:
                 print('[+] Correct HSTS configuration')
                 f.write('[+] Correct HSTS configuration \n')
-
+        serverCount = 0
         for s in sFields:
             if s not in checkFields:
                 print("[-] Server Header NOT FOUND: ")
             else:
                 print("[-] Server Header FOUND:" + s)
+                serverCount += 1
 
 
         print("\n       !PROCESSING COMPLETED!  ")
@@ -99,6 +98,9 @@ for line in lines:
 f.write("Total URL scanned " + str(urlCount))
 f.close()
 print("Total URL scanned " + str(urlCount))
+print("HSTS misconfiguration: " + str(hstsCount))
+print("Misconfigured Server Header: " + str(serverCount))
+
 
 #####################################
 # r = open('results.txt', 'a')
