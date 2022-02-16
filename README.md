@@ -5,16 +5,17 @@ Targeted Scanner Framework
 
   Current Production:
   * Security Header Findings
-  * Basic mis-configuration
-  * Sensitive Data Exposure
+  * Basic Header misconfiguration
+  * Sensitive Header Data Exposure
+  * Total URL Header Metrics
+  * Directory and File Scanner: Search date, time, last access, and provide metrics
   
   Current Development:
   * Create directory for results
   * Results file name will include date of scan
-  * Total URL scanner (* for future metrics)
   * Security Header scanner will retrieve and listed misconfigured header
   * Web Crawler [general, focused, deep-dive]
-  * Directory Search
+  
   
   Future Modules for Framework:
   * Automate Search Criteria for Web Forms Messages, and Comments sections
